@@ -9,6 +9,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["functions/**/*", "index.ts", "constants/**/*"],
+  "include": ["functions/**/*", "index.ts", "constants/**/*", "transform.ts"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
