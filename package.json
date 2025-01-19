@@ -1,6 +1,6 @@
 {
   "name": "class-to-function-generator",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A codemod to convert class components to functional components",
   "main": "index.js",
   "bin": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "transform": "jscodeshift -t ./dist/transformer.js"
+    "transform": "jscodeshift -t ./transform.js"
   },
   "dependencies": {
     "jscodeshift": "^17.0.0"
