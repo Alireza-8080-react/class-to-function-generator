@@ -1,12 +1,29 @@
 {
-    "name": "class-to-function-generator",
-    "version": "0.0.1",
-    "dependencies": {
-        "jscodeshift": "^17.0.0"
-    },
-    "devDependencies": {
-        "@types/jscodeshift": "0.12.0",
-        "typescript": "5.7.2"
-    },
-    "private": true
+  "name": "class-to-function-generator",
+  "version": "1.0.2",
+  "description": "A codemod to convert class components to functional components",
+  "main": "index.js",
+  "bin": {
+    "class-to-function-generator": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "transform": "jscodeshift -t ./src/transformer.js"
+  },
+  "dependencies": {
+    "jscodeshift": "^17.0.0"
+  },
+  "devDependencies": {
+    "@types/jscodeshift": "0.12.0",
+    "@types/node": "^22.10.7",
+    "typescript": "5.7.2"
+  },
+  "private": false,
+  "keywords": [
+    "codemod",
+    "jscodeshift",
+    "react"
+  ],
+  "author": "Alireza Shahmoradi",
+  "license": "BSD-2-Clause"
 }
