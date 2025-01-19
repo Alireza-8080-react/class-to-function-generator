@@ -14,16 +14,22 @@ The converter achieves approximately **80% accuracy** in transforming class comp
 
 ## Drawbacks
 
-1. **Merged useEffects**: The transformer merges all `useEffect hooks with dependencies` into a single hook. You will need to review and adjust these hooks to ensure they function as intended.
+1. **Merged useEffects**: The transformer merges all `useEffect` hooks with dependencies into a single hook. You will need to review and adjust these hooks to ensure they function as intended.
 2. **Complex Object Handling**: The converter does not fully understand complex objects for state initialization. For example:
-   ```ts
+
+   ```typescript
    state = {
      x: 1,
      y: 2,
      [this.props.state]: 3,
    };
    ```
+
    In such cases, you may need to manually adjust the initialization logic.
+
+## Important Note
+
+It's essential to understand that class components and functional components serve different purposes in React. Converting one to another may not always be practical, as the underlying logic and structure can differ significantly. After conversion, you must refactor the code to ensure it meets your application's requirements. However, this generator will make the initial transformation easier for you.
 
 ## Options
 
