@@ -6,6 +6,15 @@ This JSCodeshift transformer converts React class components into functional com
 
 The converter achieves approximately **80% accuracy** in transforming class components to functional components. While it handles most cases effectively, some scenarios may require manual adjustments.
 
+## Simple Case Usage
+
+For a straightforward conversion of all class components in a specified
+directory, you can run the following command:
+
+```bash
+npx class-to-function-generator <path-to-your-files>
+```
+
 ## Core Features
 
 - **TypeScript Support**: Fully compatible with TypeScript, ensuring type safety during the transformation.
@@ -40,5 +49,5 @@ Currently, the transformer supports a single option: **classNames**. This option
 To use the `classNames` option, specify it in the command line as follows:
 
 ```bash
-jscodeshift -t path/to/transformer.ts --classNames=Calendar,TextFieldWithValidation <path-to-your-files>
+npx class-to-function-generator --classNames=Calendar,TextFieldWithValidation <path-to-your-files>
 ```
