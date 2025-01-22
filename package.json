@@ -1,6 +1,6 @@
 {
   "name": "class-to-function-generator",
-  "version": "1.0.13",
+  "version": "1.1.0",
   "description": "A codemod to convert class components to functional components",
   "main": "index.js",
   "bin": {
